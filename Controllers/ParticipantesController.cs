@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CompAPI.Controllers
 {
-         [ApiConTtroller]
+         [ApiController]
         [Route("[controller]")]
 
     public class ParticipantesController : controllerBase
