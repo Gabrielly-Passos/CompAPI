@@ -6,11 +6,11 @@ namespace CompAPI.DAL
 {
     public class ConnectionFactory
     {
-        public  static string nomeConexao = "nomeConexao";
+        public  static string ConexaoLocal = "ConexaoLocal";
 
         public static IDbConnection GetStringConexao(IConfiguration config)
         {
-            return new SqlConnection(config.GetConnectionString(nomeConexao));
+            return new SqlConnection(config.GetConnectionString(ConexaoLocal));
         }
     }
 }
